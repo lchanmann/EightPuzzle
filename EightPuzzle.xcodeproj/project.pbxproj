@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		BEB61B9F1A2DAF3400672ABE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB61B9E1A2DAF3400672ABE /* main.swift */; };
+		BEB61BA71A2DAF7600672ABE /* Puzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB61BA61A2DAF7600672ABE /* Puzzle.swift */; };
+		BEB61BA91A2DAF9D00672ABE /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB61BA81A2DAF9D00672ABE /* Action.swift */; };
+		BEB61BAC1A2DAFD900672ABE /* Shuffler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB61BAB1A2DAFD900672ABE /* Shuffler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,9 @@
 /* Begin PBXFileReference section */
 		BEB61B9B1A2DAF3400672ABE /* EightPuzzle */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = EightPuzzle; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEB61B9E1A2DAF3400672ABE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		BEB61BA61A2DAF7600672ABE /* Puzzle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Puzzle.swift; sourceTree = "<group>"; };
+		BEB61BA81A2DAF9D00672ABE /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		BEB61BAB1A2DAFD900672ABE /* Shuffler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shuffler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +63,28 @@
 		BEB61B9D1A2DAF3400672ABE /* EightPuzzle */ = {
 			isa = PBXGroup;
 			children = (
+				BEB61BAA1A2DAFCA00672ABE /* utils */,
+				BEB61BA51A2DAF4800672ABE /* core */,
 				BEB61B9E1A2DAF3400672ABE /* main.swift */,
 			);
 			path = EightPuzzle;
+			sourceTree = "<group>";
+		};
+		BEB61BA51A2DAF4800672ABE /* core */ = {
+			isa = PBXGroup;
+			children = (
+				BEB61BA61A2DAF7600672ABE /* Puzzle.swift */,
+				BEB61BA81A2DAF9D00672ABE /* Action.swift */,
+			);
+			name = core;
+			sourceTree = "<group>";
+		};
+		BEB61BAA1A2DAFCA00672ABE /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				BEB61BAB1A2DAFD900672ABE /* Shuffler.swift */,
+			);
+			name = utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEB61BAC1A2DAFD900672ABE /* Shuffler.swift in Sources */,
 				BEB61B9F1A2DAF3400672ABE /* main.swift in Sources */,
+				BEB61BA91A2DAF9D00672ABE /* Action.swift in Sources */,
+				BEB61BA71A2DAF7600672ABE /* Puzzle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
