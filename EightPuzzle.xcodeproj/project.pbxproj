@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BEA52CC41A3F8CD40080011C /* AStar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA52CC31A3F8CD40080011C /* AStar.swift */; };
+		BEA52CC71A3F8EB70080011C /* ManhattanDistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA52CC61A3F8EB70080011C /* ManhattanDistance.swift */; };
 		BEB61B9F1A2DAF3400672ABE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB61B9E1A2DAF3400672ABE /* main.swift */; };
 		BEB61BA71A2DAF7600672ABE /* Puzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB61BA61A2DAF7600672ABE /* Puzzle.swift */; };
 		BEB61BA91A2DAF9D00672ABE /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB61BA81A2DAF9D00672ABE /* Action.swift */; };
@@ -26,8 +28,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BEA52CC31A3F8CD40080011C /* AStar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AStar.swift; sourceTree = "<group>"; };
+		BEA52CC61A3F8EB70080011C /* ManhattanDistance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManhattanDistance.swift; sourceTree = "<group>"; };
 		BEB61B9B1A2DAF3400672ABE /* EightPuzzle */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = EightPuzzle; sourceTree = BUILT_PRODUCTS_DIR; };
-		BEB61B9E1A2DAF3400672ABE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		BEB61B9E1A2DAF3400672ABE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = main.swift; sourceTree = "<group>"; };
 		BEB61BA61A2DAF7600672ABE /* Puzzle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Puzzle.swift; sourceTree = "<group>"; };
 		BEB61BA81A2DAF9D00672ABE /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		BEB61BAB1A2DAFD900672ABE /* Shuffler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shuffler.swift; sourceTree = "<group>"; };
@@ -44,6 +48,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BEA52CC21A3F8CBF0080011C /* search */ = {
+			isa = PBXGroup;
+			children = (
+				BEA52CC51A3F8E9C0080011C /* heuristic */,
+				BEA52CC31A3F8CD40080011C /* AStar.swift */,
+			);
+			name = search;
+			sourceTree = "<group>";
+		};
+		BEA52CC51A3F8E9C0080011C /* heuristic */ = {
+			isa = PBXGroup;
+			children = (
+				BEA52CC61A3F8EB70080011C /* ManhattanDistance.swift */,
+			);
+			name = heuristic;
+			sourceTree = "<group>";
+		};
 		BEB61B921A2DAF3400672ABE = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +84,7 @@
 		BEB61B9D1A2DAF3400672ABE /* EightPuzzle */ = {
 			isa = PBXGroup;
 			children = (
+				BEA52CC21A3F8CBF0080011C /* search */,
 				BEB61BAA1A2DAFCA00672ABE /* utils */,
 				BEB61BA51A2DAF4800672ABE /* core */,
 				BEB61B9E1A2DAF3400672ABE /* main.swift */,
@@ -144,9 +166,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEB61BAC1A2DAFD900672ABE /* Shuffler.swift in Sources */,
+				BEA52CC71A3F8EB70080011C /* ManhattanDistance.swift in Sources */,
 				BEB61B9F1A2DAF3400672ABE /* main.swift in Sources */,
 				BEB61BA91A2DAF9D00672ABE /* Action.swift in Sources */,
 				BEB61BA71A2DAF7600672ABE /* Puzzle.swift in Sources */,
+				BEA52CC41A3F8CD40080011C /* AStar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +285,7 @@
 				BEB61BA41A2DAF3400672ABE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

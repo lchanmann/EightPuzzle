@@ -15,9 +15,14 @@ var totalPuzzles = 50
 // Puzzle collection
 var puzzles: [Puzzle] = []
 
+// Search algorithms
+var algorithm = AStar()
+
 for var i=0; i<totalPuzzles; i++ {
     var puzzle = Puzzle(layout: Shuffler.perform(goal, difficulty: i + 1))
-    puzzles.append(puzzle)
     
-    println(puzzle.get_layout())
+    algorithm.search(puzzle)
+//    puzzles.append(puzzle)
+//    
+//    println(puzzle.get_layout())
 }
